@@ -3,9 +3,8 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #4e1f1f;
+  box-sizing: border-box;
+  color: rgb(78, 31, 31);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-image: url(src/assets/img/coast-gb4ffa78ae_1280.jpg);
   background-position: center;
@@ -13,9 +12,7 @@ body {
   background-size: cover;
   border: 20px solid rgba(255, 255, 255, 0.267);
 }
-
 app-root {
   padding: 10px;
   height: auto;
 }
-/*# sourceMappingURL=styles.css.map */

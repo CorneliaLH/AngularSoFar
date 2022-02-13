@@ -1,0 +1,8 @@
+<p>How many animals are fed: {{ numberFed }}</p>
+
+<app-print-animal
+  *ngFor="let a of animals"
+  [animal]="a"
+  (fed)="thisAnimalIsFed($event)"
+  (fed)="localStorageFunction($event)"
+></app-print-animal>

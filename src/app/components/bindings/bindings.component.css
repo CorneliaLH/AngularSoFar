@@ -1,0 +1,55 @@
+div {
+  width: 70%;
+}
+
+img {
+  border: 3px solid green;
+  width: 200px;
+  margin: 5px;
+}
+
+img:first-child {
+  border: 3px solid blue;
+}
+
+img:last-child {
+  border: 3px solid purple;
+}
+
+.klass2 {
+  color: purple;
+}
+
+.klass1 {
+  color: blue;
+}
+
+.klass3 {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 5px solid purple;
+  background-color: teal;
+}
+
+.klass4 {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 5px solid teal;
+  background-color: salmon;
+}
+
+span {
+  margin: 10px;
+}
+
+button {
+  color: white;
+  background-color: teal;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*# sourceMappingURL=bindings.component.css.map */

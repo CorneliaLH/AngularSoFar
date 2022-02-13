@@ -1,0 +1,16 @@
+<div>
+  <ul>
+    <li>{{ animal.species }}</li>
+    <li>{{ animal.name }}</li>
+    <li>{{ animal.age }}</li>
+    <li *ngIf="animal.niceAnimal; else notNice">
+      {{ animal.species }} is nice!
+    </li>
+    <ng-template #notNice
+      ><li>{{ animal.name }} is NOT nice!</li>
+    </ng-template>
+    <li *ngIf="animal.isFed; else notFed">I'm stuffed!</li>
+    <ng-template #notFed><li>I'm hungry!</li></ng-template>
+  </ul>
+  <button (click)="feedAnimal()">FEEEED ME!!</button>
+</div>

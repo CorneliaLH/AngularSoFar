@@ -1,0 +1,17 @@
+<div>
+  <ul>
+    <li>Cornelias födelsedag: {{ birthday | date: "yyyy-MM-dd" }}</li>
+    <li>Tid: {{ birthday | date: "hh:mm" }}</li>
+    <li>Ålder:</li>
+    <li>{{ ageInMilliseconds | number: "1.1-1" }} millisekunder</li>
+    <li>{{ ageInDays | number: "1.1-1" }} dagar</li>
+    <li>{{ ageInYears | number: "1.1-1" }} år</li>
+    <li>Dagens datum: {{ today1 | date: "yyyy-MM-dd hh:mm:ss" }}</li>
+    <li>
+      Nedräkning till 40: {{ days }} dagar, {{ hours }} timmar,{{
+        minutes
+      }}
+      minuter och {{ seconds }} sekunder!
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+<h2>Använt: (keyup)="childFunction1($event)"</h2>
+<input type="text" (keyup)="childFunction1($event)" />
+<p>Här skrivs text: {{ text1 }}</p>
+<h2>Använt:(keyup)="childFunction2($event)"</h2>
+<input type="text" (keyup)="childFunction2($event)" />
+<p>Här skrivs text: {{ text2 }}</p>
+<h2>
+  Använt: #templateVariable och
+  (keyup.enter)="childFunction3(templateVariable.value)
+</h2>
+<input
+  type="text"
+  #templateVariable
+  (keyup.enter)="childFunction3(templateVariable.value)"
+/>
+<p>Här skrivs text: {{ text3 }}</p>

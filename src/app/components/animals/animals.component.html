@@ -1,0 +1,14 @@
+<div *ngFor="let a of animals; let i = index">
+  <ul *ngIf="animals[i].niceAnimal">
+    <li>{{ animals[i].species }}</li>
+    <li>{{ animals[i].name }}</li>
+    <li>{{ animals[i].age }}</li>
+    <li *ngIf="animals[i].fourLegs; else twoLegs">
+      {{ animals[i].name }} has 4 legs
+    </li>
+    <ng-template #twoLegs
+      ><li>{{ animals[i].name }} has 2 legs</li></ng-template
+    >
+  </ul>
+</div>
+<button (click)="toggleAnimals()">Change who is nice</button>
